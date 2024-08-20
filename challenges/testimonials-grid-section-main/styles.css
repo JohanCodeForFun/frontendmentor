@@ -102,11 +102,20 @@ body > main > article > p {
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 40em) {
   .wrapper {
-  grid-template-areas: 
-    "daniel daniel jonathan kira"
-    "jeanette patrick patrick kira"
-    ;
+    grid-template-areas: 
+      "daniel daniel"
+      "patrick kira"
+      "jeanette kira"
+      "jonathan jonathan";
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .wrapper {
+    grid-template-areas: 
+      "daniel daniel jonathan kira"
+      "jeanette patrick patrick kira";
   }
 }
