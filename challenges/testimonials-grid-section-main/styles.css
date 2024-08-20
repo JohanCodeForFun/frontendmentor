@@ -6,9 +6,17 @@ body {
   display: grid;
   gap: 1.5rem;
   padding: 1.5rem;
+
+  grid-template-areas: 
+    "daniel"
+    "jonathan"
+    "jeanette"
+    "patrick"
+    "kira";
   }
 
 .wrapper .daniel {
+  grid-area: daniel;
   background-position: 90% 0%;
   background-repeat: no-repeat;
   background-image: url("./images/bg-pattern-quotation.svg");
@@ -20,6 +28,7 @@ body {
 }
 
 .wrapper .jonathan {
+  grid-area: jonathan;
   border-radius: .5rem;
   background-color: hsl(217, 19%, 35%);
   color: hsl(0, 0%, 100%);
@@ -28,6 +37,7 @@ body {
 }
 
 .wrapper .jeanette {
+  grid-area: jeanette;
   border-radius: .5rem;
   background-color: hsl(0, 0%, 100%);
   color: hsl(0, 0%, 0%);
@@ -35,6 +45,7 @@ body {
   padding-top: 1.5rem;
 }
 .wrapper .patrick {
+  grid-area: patrick;
   border-radius: .5rem;
   background-color: hsl(219, 29%, 14%);
   color: hsl(0, 0%, 100%);
@@ -42,6 +53,7 @@ body {
   padding-top: 1.5rem;
 }
 .wrapper .kira {
+  grid-area: kira;
   border-radius: .5rem;
   background-color: hsl(0, 0%, 100%);
   color: hsl(0, 0%, 0%);
@@ -79,6 +91,10 @@ body > main > article > div > div > p {
   margin: 0;
   color: hsl(0, 0%, 50%);
 }
+body > main > article.jeanette > p,
+body > main > article.kira > p {
+  color: hsl(0, 0%, 50%);
+}
 
 body > main > article > p {
   color: hsl(0, 0%, 81%);
@@ -86,3 +102,13 @@ body > main > article > p {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (min-width: 380px) {
+  .wrapper {
+  grid-template-areas: 
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira"
+    ;
+  }
+}
