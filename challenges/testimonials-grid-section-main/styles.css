@@ -1,0 +1,88 @@
+body {
+  background-color: hsl(0, 0%, 81%);
+}
+
+.wrapper {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  }
+
+.wrapper .daniel {
+  background-position: 90% 0%;
+  background-repeat: no-repeat;
+  background-image: url("./images/bg-pattern-quotation.svg");
+  border-radius: .5rem;
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  padding-top: 1.5rem;
+}
+
+.wrapper .jonathan {
+  border-radius: .5rem;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  padding-top: 1.5rem;
+}
+
+.wrapper .jeanette {
+  border-radius: .5rem;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  padding: 1rem;
+  padding-top: 1.5rem;
+}
+.wrapper .patrick {
+  border-radius: .5rem;
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  padding-top: 1.5rem;
+}
+.wrapper .kira {
+  border-radius: .5rem;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  padding: 1rem;
+  padding-top: 1.5rem;
+}
+
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* width: 50%; */
+}
+
+.title > img {
+  border-radius: 6rem;
+  border: 1px solid ;
+  height: 50px;
+  width: 50px;
+}
+
+body > main > article > div > div > h4 {
+  margin: 0;
+  margin-bottom: .3rem;
+  color: hsl(0, 0%, 81%);
+}
+
+body > main > .jeanette > div > div > h4,
+body > main > .kira > div > div > h4 {
+  color: hsl(0, 0%, 20%);
+}
+
+body > main > article > div > div > p {
+  margin: 0;
+  color: hsl(0, 0%, 50%);
+}
+
+body > main > article > p {
+  color: hsl(0, 0%, 81%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
