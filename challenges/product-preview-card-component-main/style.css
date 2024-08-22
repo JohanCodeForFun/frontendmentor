@@ -1,0 +1,92 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500, 700;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.card {
+  margin-top: 1rem;
+  color: hsl(228, 12%, 48%);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 0 .5rem .5rem;
+  width: 95%;
+}
+
+.title {
+  color: hsl(212, 21%, 14%);
+  margin: 1rem 0;
+  font-family: "Fraunces", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.card > * {
+  padding: 1rem;
+}
+.card-content > p {
+  margin: .5rem 0;
+}
+
+.image {
+  width: 100%;
+  padding: 0;
+  border-radius: .5rem .5rem 0 0;
+}
+
+button {
+  text-align: center;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border-radius: .5rem;
+  border: 0;
+  width: 100%;
+  padding: .8rem;
+}
+
+button:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+
+.button-wrapper {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-icon {
+  margin-right: .5rem;
+  height: 16px;
+  width: 16px;
+}
+
+p > .price {
+  color: hsl(158, 36%, 37%);
+  font-size: 24px;
+  padding-right: 1rem;
+}
+
+.previous-price {
+  text-decoration: line-through;
+}
+
+svg {
+  width: 10px;
+  height: 10px;
+  color: white;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
