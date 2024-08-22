@@ -2,6 +2,12 @@ body {
   background-color: hsl(0, 0%, 81%);
 }
 
+strong {
+  color: red;
+  font-weight: 700;
+  font-size: 21px;
+}
+
 .wrapper {
   display: grid;
   gap: 1.5rem;
@@ -9,10 +15,10 @@ body {
 
   grid-auto-columns: 1fr;
   grid-template-areas: 
-    "daniel"
-    "jonathan"
-    "jeanette"
-    "patrick"
+  "jeanette"
+  "patrick"
+  "jonathan"
+  "daniel"
     "kira";
   }
 
@@ -65,7 +71,7 @@ body {
 .flex {
   align-items: center;
   display: flex;
-  gap: 1rem;
+  gap: 1rem;  
 }
 
 .title > img {
